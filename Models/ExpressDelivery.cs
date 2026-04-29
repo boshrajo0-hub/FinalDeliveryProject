@@ -15,7 +15,7 @@ namespace DeliverySystemProject.Models
         public override double CalculateCost()
         {
             // شحن سريع: الوزن مضروب بـ 10 (كمثال بسيط)
-            return Weight * 10;
+            return Weight * 15;
         }
 
         // إعادة تعريف دالة الوقت 
