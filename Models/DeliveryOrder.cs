@@ -51,7 +51,7 @@ namespace DeliverySystemProject.Models
             }
         }
 
-        // 4. الباني (Constructor)
+        // 4. الباني 
         protected DeliveryOrder(string trackingNumber, string sender, string recipient)
         {
             _trackingNumber = trackingNumber;
