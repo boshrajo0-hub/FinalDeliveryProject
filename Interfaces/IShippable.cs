@@ -2,10 +2,10 @@
 
 namespace DeliverySystemProject.Interfaces
 {
-    // هاد هو الـ Interface اللي طلبه الدكتور
+    
     public interface IShippable
     {
-        // دالة لحساب وقت التوصيل (بدون كود، بس اسم)
+        // دالة لحساب وقت التوصيل
         void GetEstimatedTime();
     }
 }
