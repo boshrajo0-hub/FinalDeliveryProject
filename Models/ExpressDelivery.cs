@@ -2,10 +2,10 @@
 
 namespace DeliverySystemProject.Models
 {
-     // هون عم نطبق الوراثة من الكلاس الأساسي [cite: 24]
+     // الوراثة من الكلاس الأساسي 
     public class ExpressDelivery : DeliveryOrder
     {
-        // الكونسلتركتور بياخد المعلومات وبيرسلها للأب
+        
         public ExpressDelivery(string trackingNumber, string sender, string recipient)
             : base(trackingNumber, sender, recipient)
         {
@@ -14,7 +14,7 @@ namespace DeliverySystemProject.Models
         // إعادة تعريف دالة حساب التكلفة 
         public override double CalculateCost()
         {
-            // شحن سريع: الوزن مضروب بـ 10 (كمثال بسيط)
+            // شحن سريع: الوزن مضروب ب١٥ 
             return Weight * 15;
         }
 
