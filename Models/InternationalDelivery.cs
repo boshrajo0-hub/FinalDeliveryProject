@@ -2,24 +2,24 @@
 
 namespace DeliverySystemProject.Models
 {
-    // الوراثة من الكلاس الأساسي للمرة الثالثة
+// الوراثة من الكلاس الأساسي
     public class InternationalDelivery : DeliveryOrder
     {
-        // حقل إضافي خاص بالشحن الدولي فقط
-        private double _customsTax = 25.0; // ضريبة ثابتة مثلاً
+    
+        private double _customsTax = 25.0; // ضريبة ثابتة 
 
         public InternationalDelivery(string trackingNumber, string sender, string recipient)
             : base(trackingNumber, sender, recipient)
         {
         }
 
-        // حساب التكلفة: وزن * سعر مرتفع + ضريبة
+        // حساب التكلفة: وزن * سعر  + ضريبة
         public override double CalculateCost()
         {
             return (Weight * 15) + _customsTax;
         }
 
-        // وقت التوصيل الدولي هو الأطول طبعاً
+        //وقت التوصيل الدولي هو الأطول
         public override void GetEstimatedTime()
         {
             Console.WriteLine("Estimated Delivery Time: 7 to 14 Business Days.");
