@@ -21,7 +21,7 @@ namespace DeliverySystemProject.Models
         // وقت التوصيل العادي أكيد أطول
         public override void GetEstimatedTime()
         {
-            Console.WriteLine("Estimated Delivery Time: 3 to 5 Business Days.");
+            Console.WriteLine("Estimated Delivery Time: 5 to 7 Business Days.");
         }
     }
 }
