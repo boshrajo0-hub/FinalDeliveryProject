@@ -2,23 +2,23 @@
 
 namespace DeliverySystemProject.Models
 {
-    // هون كمان وراثة من الكلاس الأساسي (الأب)
+    /// وراثة من الكلاس الأساسي (الأب)
     public class StandardDelivery : DeliveryOrder
     {
-        // الكونسلتركتور بيمرر البيانات للأب (base)
+    e
         public StandardDelivery(string trackingNumber, string sender, string recipient)
             : base(trackingNumber, sender, recipient)
         {
         }
 
-        // هون بنحسب التكلفة بأسلوب "عادي" (أرخص من السريع)
+        // حساب التكلفة بأسلوب عادي 
         public override double CalculateCost()
         {
-            // شحن عادي: الوزن مضروب بـ 5 (أرخص بمرتين)
+            // شحن عادي:الوزن مضروب بـ 5 
             return Weight * 5;
         }
 
-        // وقت التوصيل العادي أكيد أطول
+        // وقت التوصيل العادي أطول
         public override void GetEstimatedTime()
         {
             Console.WriteLine("Estimated Delivery Time: 5 to 7 Business Days.");
