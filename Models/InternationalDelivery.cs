@@ -6,7 +6,7 @@ namespace DeliverySystemProject.Models
     public class InternationalDelivery : DeliveryOrder
     {
     
-        private double _customsTax = 25.0; // ضريبة ثابتة 
+        private double _customsTax = 35.0; // ضريبة ثابتة 
 
         public InternationalDelivery(string trackingNumber, string sender, string recipient)
             : base(trackingNumber, sender, recipient)
